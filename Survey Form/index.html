@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel = "icon" href = 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbf0aTp-PTKaq3-WaR4VoTKhW6_f1w6vuxlYWgtJdbs76BlufiU2yrDPnGT2qjwNg818g&usqp=CAU" 
+        type = "image/x-icon">
+    <title>C3 CHURCH</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">C3 Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for filling it up
+        </p>
+      </header>
+      <form id="survey-form">
+          <!--Name Section-->
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+         <!--Email Section-->
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <!--Phone number-->
+        <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(EDAD)</span></label
+      >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="3"
+            max="99"
+            class="form-control"
+            placeholder="Enter your Age"
+          />
+        </div>
+        <!--AGE GROUP SECTION-->
+        <div class="form-group">
+          <p>Age Group</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select Age Group</option>
+            <option value="student">Kids</option>
+            <option value="job">Young</option>
+            <option value="learner">Young Pro</option>
+            <option value="preferNo">Adult</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+     <!--Recommend/Radio Section -->
+        <div class="form-group">
+          <p>Would you recommend C3 to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />maybe</label
+          >
+        </div>
+    <!--Improved/Checkbox Section-->
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+      ><input
+        name="prefer"
+        value="pastor"
+        type="checkbox"
+        class="input-checkbox"
+      />Pastors</label
+    >
+          <label>
+      <input
+        name="prefer"
+        value="music-ministry"
+        type="checkbox"
+        class="input-checkbox"
+      />Music Ministry</label
+    >
+    <label
+    ><input
+      name="prefer"
+      value="media-team"
+      type="checkbox"
+      class="input-checkbox"
+    />Media Team</label
+  >
+        </div>
+  <!--Suggestion.TextArea Section-->
+        <div class="form-group">
+          <p>Any suggestions to our TEAM?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your Suggestions here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
